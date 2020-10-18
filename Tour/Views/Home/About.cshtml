@@ -1,0 +1,283 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="~/Conntent/Contnt/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="aboutus.css">
+    <style>
+        .bikes {
+            background-color: rgb(254,254,254);
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+            .bikes:hover {
+                background-color: rgb(244,244,244);
+            }
+
+        body {
+            background-color: #F0EBEB;
+        }
+
+        .dropdown-item:hover {
+            color: black;
+        }
+
+        .dropdown-menu {
+            color: black;
+            background-color: black;
+        }
+
+            .dropdown-menu:hover {
+                color: black;
+                background-color: black;
+            }
+
+        .bgimg {
+            background-image: url("~/Content/img/road1.jpg");
+            background-size: auto;
+            /*filter: blur(2px);*/
+            position: sticky;
+            width: 100%;
+            height: 550px;
+            border-radius: 0% 00% 40% 40%;
+        }
+
+        .headerset {
+            padding-top: 60px;
+            box-sizing: border-box;
+        }
+
+            .headerset h1 {
+                font-size: 95px;
+                color: #FFC107;
+                text-shadow: 2px 5px 10px #333333;
+                font-family: Carter One;
+            }
+
+            .headerset h3 {
+                color: #FFFFFF;
+                font-size: 32px;
+                text-shadow: 0 14px 118px;
+            }
+
+        .box1, .box2 {
+            height: 520px;
+            width: 100%;
+            background-color: #111222;
+            margin-top: -150px;
+            padding: 150px 40px 40px 40px;
+            opacity: .8;
+            filter: alpha(opacity=50);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+            color: #080832;
+        }
+
+        #box3 {
+            width: 100%;
+            background-color: #111222;
+            padding: 30px 40px;
+            opacity: .8;
+            filter: alpha(opacity=50);
+        }
+
+        .text1 {
+            font-family: Carter One;
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+
+        .text2 {
+            margin-top: 30px;
+            color: white;
+            text-align: center;
+            font-size: 20px
+        }
+
+        .text22 {
+            margin-top: 30px;
+            color: white;
+            text-align: left;
+            font-size: 20px
+        }
+
+        .cloud, .data, .lock {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            border-radius: 50%;
+            position: relative;
+            bottom: 620px;
+        }
+
+        .icn {
+            padding: 0px;
+            border-style: groove;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .btn2 {
+            background-color: rgb(117, 143, 174);
+            color: white;
+            border: 2px solid rgb(117, 143, 174);
+            margin-top: 10px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+            .btn2:hover {
+                border: 2px solid rgb(117, 143, 174);
+                background-color: #082832;
+                border: 2px solid #082832;
+                color: white;
+            }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="mainn">
+
+        <div class="bgimg">
+
+            <div class="container text-center headerset">
+                <h1>About Us</h1>
+                <h3 style="color:black;">Visit Bangladesh</h3>
+            </div>
+
+        </div>
+
+        <div class="container" style="margin-bottom: 0px;">
+            <div class="col-md-6" style="margin-top: 00px; margin-bottom: 100px; padding:0px 40px;">
+
+
+
+                <div class='box2'>
+                    <h2 class="text1">Sylvia sanjana</h2>
+                    <p class="text2">Ahsanullah University of Science and Technology<br>Department: CSE<br>Semester: 3.2<br>Section: C2<br>ID: 17.01.04.142</p>
+
+
+
+                    <h5 class="font-weight-bold text-uppercase mb-6" style="color: #ffc107; text-align: center;">Follow Us On</h5>
+
+                    <div style="margin: auto; width: 130px;">
+                        <a href="https://www.facebook.com/sylvia.priyata"><img src="~/Content/img//fb.jpg" style="height: 40px;width: 40px; margin: auto;"></a>
+
+                        <a href="https://twitter.com/iamsrk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="~/Content/img/twitter.jpg" style="height: 40px;width: 40px;  "></a>
+                        <a href="https://www.instagram.com/Daiyan_ibrahim/?fbclid=IwAR21ockl3IzergeB2-jCtsggutY1JExVcy-gAPlMX4oCISuLCY11vLGB0YQ"><img src="~/Content/img/insta.jpg" style="height: 40px;width: 40px; "></a>
+                    </div>
+
+
+                </div>
+                <div class="cloud">
+                    <img style="border-radius: 100%;" src="~/Content/img/priyata.jpg" />
+                </div>
+
+
+            </div>
+            <div class='row'>
+                <div class="col-md-6" style="margin-top: 00px; margin-bottom: 100px; padding:0px 40px;">
+
+
+
+
+                    <div class='box1'>
+                        <h2 class="text1">Daiyan Ibrahim</h2>
+                        <p class="text2">Ahsanullah University of Science and Technology<br>Department: CSE<br>Semester: 3.2<br>Section: C2<br>ID: 17.01.04.144</p>
+                        <h5 class="font-weight-bold text-uppercase mb-6" style="color: #ffc107; text-align: center;">Follow Us On</h5>
+
+                        <div style="margin: auto; width: 130px;">
+                            <a href="https://www.facebook.com/daiyan.ibrahim71"><img src="~/Content/img/fb.jpg" style="height: 40px;width: 40px; margin: auto;"></a>
+
+                            <a href="https://twitter.com/iamsrk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="~/Content/img/twitter.jpg" style="height: 40px;width: 40px;  "></a>
+                            <a href="https://www.instagram.com/Daiyan_ibrahim/?fbclid=IwAR21ockl3IzergeB2-jCtsggutY1JExVcy-gAPlMX4oCISuLCY11vLGB0YQ"><img src="~/Content/img/insta.jpg" style="height: 40px;width: 40px; "></a>
+                        </div>
+
+                    </div>
+                    <div class="cloud">
+                        <img style="border-radius: 100%;" src="~/Content/img/daiyan1.jpg" />
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+
+                </div>
+
+                <div class="col-md-6" style="margin-top: 00px; margin-bottom: 100px; padding:0px 40px;">
+
+
+
+                    <div class='box2'>
+                        <h2 class="text1">Fatema Mehnaj Promitee</h2>
+                        <p class="text2">Ahsanullah University of Science and Technology<br>Department: CSE<br>Semester: 3.2<br>Section: C2<br>ID: 17.01.04.154</p>
+
+
+
+                        <h5 class="font-weight-bold text-uppercase mb-6" style="color: #ffc107; text-align: center;">Follow Us On</h5>
+
+                        <div style="margin: auto; width: 130px;">
+                            <a href="https://www.facebook.com/fatema.promitee"><img src="~/Content/img//fb.jpg" style="height: 40px;width: 40px; margin: auto;"></a>
+
+                            <a href="https://twitter.com/iamsrk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="~/Content/img/twitter.jpg" style="height: 40px;width: 40px;  "></a>
+                            <a href="https://www.instagram.com/Daiyan_ibrahim/?fbclid=IwAR21ockl3IzergeB2-jCtsggutY1JExVcy-gAPlMX4oCISuLCY11vLGB0YQ"><img src="~/Content/img/insta.jpg" style="height: 40px;width: 40px; "></a>
+                        </div>
+
+
+                    </div>
+                    <div class="cloud">
+                        <img style="border-radius: 100%;" src="~/Content/img/promitee.jpg" />
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row" style="">
+
+                <div class="col-md-12" style=" margin: -180px 0px 80px 0px;">
+                    <div style="padding: 0px 20px;">
+                        <div id="box3">
+                            <h2 class="text1">Visit Bangladesh</h2><p style="color: white; font-size: 15px; margin-top: -35px; margin-left: 220px; text-align: center;">.com</p>
+                                                                   <p class="text22">
+                                                                       The objective of this project is to guide people to travel tourist spots of Bangladesh in a short time and in an affordable cost.<br />
+
+                                                                       In this website we will give information about famous places so that people don’t have to research about that.<br />
+                                                                       As a result it will save their time. Hotels and tourist guide related information will also be given in the website.<br />
+                                                                       So that tourist can book hotels and tourist guide in advance through information given in the website and can<br /> have idea about the total cost beforehand.<br />
+                                                                       Registered users can post blogs about their tour experience and other users can see the blogs.
+                                                                   </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
+

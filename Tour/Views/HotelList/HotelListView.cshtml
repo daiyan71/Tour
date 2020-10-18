@@ -1,0 +1,79 @@
+﻿
+
+    
+    @{
+        ViewBag.Title = "HotelListView";
+    }
+
+               <html lang="en">
+
+               <head>
+
+                   <meta charset="utf-8">
+                   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                   <meta name="description" content="">
+                   <meta name="author" content="">
+
+                   <title>Heroic Features - Start Bootstrap Template</title>
+
+                   <!-- Bootstrap core CSS -->
+                   <link href="~/Conntent/Contnt/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+                   <!-- Custom styles for this template -->
+                   <link href="~/Conntent/Contnt/css/heroic-features.css" rel="stylesheet">
+
+               </head>
+
+               <body>
+
+                   <!-- Navigation -->
+                   <!-- Page Content -->
+                   <div class="container">
+
+                       <!-- Jumbotron Header -->
+                       <header class="jumbotron my-4">
+                           <h2 class="display-3">Here is the list of all the Hotels available in this location!</h2>
+                           <h4 class="lead">Find your perfect hotel here!</h4>
+                       </header>
+
+                       <!-- Page Features  <div class="col-lg-3 col-md-6 mb-4"> -->
+                       <div class="row text-center">
+                           @foreach (var item in Model)
+                           {
+   
+                               <div class="col-md-6" style="background-color: #f5f9ff; margin-bottom:50px;padding:20px;">
+                                   <div class="card h-100">
+                                       <div class="card-body">
+                                           <!--<h4 class="card-title">@@item.HotelName</h4>-->
+                                           <img class="card-img-top" style="max-width: 100%; max-height: 100%;" src="@Url.Content(@item.Image)">
+                                           <h2><a href="@Url.Action("HotelView","Hotel",new { id = item.HotelId })">Hotel :  @item.HotelName</a></h2>
+                                           <h4 class="card-text" style="height:20px">Address: @item.Address.</h4>
+                                           <h4 class="card-text" style="height:60px">Charges from: @item.MinPrice BDT To  @item.MaxPrice BDT </h4>
+                                       </div>
+                                       <div class="card-footer">
+                                           <a href="@Url.Action("HotelView","Hotel",new { id = item.HotelId })" class="btn btn-primary">See Details</a>
+                                       </div>
+                                   </div>
+
+                                   <div style="height:50px">
+
+                                   </div>
+                               </div>
+                               
+                           }
+
+
+
+                       </div>
+                       <!-- /.row -->
+
+                   </div>
+                   <!-- /.container -->
+                   <!-- Footer -->
+                   <!-- Bootstrap core JavaScript -->
+                   <script src="~/Conntent/Contnt/vendor/jquery/jquery.min.js"></script>
+                   <script src="~/Conntent/Contnt/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+               </body>
+
+               </html>

@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Tour.Models.Hotel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LocationId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HotelName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MinPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxPrice)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.LocationId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.HotelName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Address)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Email)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Phone)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.MinPrice)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.MaxPrice)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Image)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { item.HotelId, item.LocationId, item.HotelName, item.Address, item.Email, item.Phone, item.MinPrice, item.MaxPrice }) |
+        
+        @Html.ActionLink("Delete", "Delete", new { id = item.HotelId })
+    </td>
+
+    
+</tr>
+}
+
+</table>
+<div>
+    @Html.ActionLink("Move to Hotel List", "List")
+</div>

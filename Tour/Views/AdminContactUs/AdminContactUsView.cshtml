@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "AdminContactUsView";
+}
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Heroic Features - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/Conntent/Contnt/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/Conntent/Contnt/css/heroic-features.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="jumbotron my-4">
+        <h2 class="display-3 text-center">All the messages that we received!</h2>
+    </header>
+    <!-- Navigation -->
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <!-- Page Features  <div class="col-lg-3 col-md-6 mb-4"> -->
+        <div class="row text-center">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-md-2">
+                    <div style="height:30px">
+
+                    </div>
+                </div>
+                <div class="col-md-8 text-left" style="background-color: #f2f2f2; padding:30px; ">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title" style=""><b>Subject : @item.Subject </b></h4>
+                            <h4 class="card-title" style=""><b>Email   : @item.Email </b></h4>
+                            <h4 class="card-text" style="background-color:#fbfceb; padding:30px;">@item.Message. </h4>
+                        </div>
+                    </div>
+
+                    <div style="height:30px">
+
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div style="height:30px">
+
+                    </div>
+                </div>
+
+                <div style="height:300px;background-color:white;">
+
+                </div>
+
+            }
+
+
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/Conntent/Contnt/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Conntent/Contnt/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
